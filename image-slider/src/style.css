@@ -1,0 +1,89 @@
+body {
+    /* Background -> A nice gradient */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.prev, .next {
+    /* nice yellow gradient that complements the background */
+    background: linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba(255,255,0,1) 0%, rgba(255,255,0,1) 100%);
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    border: 2px solid black;
+    min-height: 180px;
+    min-width: 320px;
+    height: 80vh;
+    width: 80vw;
+}
+
+.image_1 {
+    background: url(./img/circle-cropped.png);
+}
+
+.image_2 {
+    background: url(./img/cosmic-timetraveler-BzqaeA-hkkc-unsplash.jpg);
+}
+
+.image_3 {
+    background: url(./img/cover.jpeg);
+}
+
+.image_4 {
+    background: url(./img/daniel-sessler-9GYrluZP4-4-unsplash.jpg);
+}
+
+.image_5 {
+    background: url(./img/danist-bviex5lwf3s-unsplash.jpg);
+}
+
+.image_6 {
+    background: url(./img/dave-beasley-XvniRqem_jQ-unsplash.jpg);
+}
+
+.currentImg {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.navCircles {
+    position: relative;
+    top: -30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 1px;
+}
+
+.circle {
+    min-width: 10px;
+    min-height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    background-color: black;
+}
